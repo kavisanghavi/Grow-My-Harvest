@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Grow My Harvest</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- Custom fonts for this template-->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin-2.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
+  <link href="creditcard/css/style.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <!-- Main Content -->
+      <div id="content" class="content">
+
+        <!-- Navbar Begins -->
+        <nav class="navbar scrollNav navbar-light fixed-top navbar-expand-lg">
+          <a class="navbar-brand" href="#"><img src="./img/logo.png" class="img-scroll app-logo"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto navbar-right">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Blog <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Support</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">My Account</a>
+              </li>
+
+              <button type="button" class="btn dashboard btn-secondary">Dashboard
+              </button>
+
+              <button type="button" class="btn login btn-secondary">Logout
+              </button>
+            </ul>
+          </div>
+        </nav>
+        <!-- Navbar Ends -->
+        <!-- Begin Page Content -->
+        <div class="container-fluid" style="padding-top:100px;">
+          <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
+          <!-- Page Heading -->
+          <div class="mb-4" style="margin:0 auto; text-align: center;">
+            <h1 class="h3 mb-0 text-gray-800">Welcome, Mr. Sanghavi</h1>
+          </div>
+          <!-- End of Page Heading -->
+          <!-- Widgets Row -->
+
+        <div class="row custom-row-margin">
+          <div class="col-md-4">
+          <div class="card border-left-primary shadow mb-4">
+            <div class="card-body text-center">
+              <div class="text-xs font-weight-bold text-primary text-uppercase mb-1 counter-title">Total Fees Paid</div>
+              <div class="h5 mb-0 font-weight-bold text-gray-800 counter-content"><span id="fees"></span>  </div>
+            </div>
+          </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-left-info shadow mb-4">
+              <div class="card-body  text-center">
+                <div class="text-xs font-weight-bold text-info text-uppercase mb-1 counter-title">Total Refunds</div>
+                <div class="h5 mb-0 font-weight-bold text-gray-800 counter-content"><span id="refunds"></span>    <i class="fas fa-dollar-sign fa-2x text-gray-300" style="float: right;font-size: inherit;"></i></div>
+
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card border-left-success shadow mb-4">
+              <div class="card-body  text-center">
+                <div class="row no-gutters align-items-center">
+                  <div class="col mr-2">
+                    <div class="text-xs font-weight-bold text-success text-uppercase mb-1 counter-title">Total Accounts Linked</div>
+                    <div class="h5 mb-0 font-weight-bold text-gray-800 counter-content"><span id="accounts"></span>   <i class="fas fa-university fa-2x text-gray-300" style="float: right;font-size: inherit;"></i></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <!-- End of Widgets Row -->
+
+
+        <!--Bank Details Row -->
+
+        <div class="row row-padding">
+          <div class="col-lg-8 col-xs-12">
+
+            <div class="card shadow mb-4">
+              <!-- Card Header - Dropdown -->
+              <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                <h6 class="m-0 font-weight-bold text-primary">Every Fee Listed by Bank Account</h6>
+              </div>
+              <!-- Card Body -->
+              <div class="card-body">
+                <div class="bank-name">
+                  Bank of America
+                </div>
+                <div class="bank-details">
+                  <div class="bank-row" id="bank">
+                    <div class="bank-account float-left">Credit Card 1384 <a id="more-details" class="more-details"><i class="fa fa-chevron-circle-right"></i></a></div>
+                    <div class="bank-fees float-right">$50 </div>
+
+
+
+                    <div class="moveasidebankfees bank-row bank-fees-details hidden">
+                      <div class="bank-account float-left">Signup Charges</div>
+                      <div class="bank-fees float-right">$5</div>
+                    </div>
+                    <div class="moveasidebankfees bank-row bank-fees-details hidden">
+                      <div class="bank-account float-left">ATM Charges</div>
+                      <div class="bank-fees float-right">$18</div>
+                    </div>
+
+
+                  </div>
+
+                  <div class="bank-row">
+                    <div class="bank-account float-left">Checking 1258</div>
+                    <div class="bank-fees float-right">$123</div>
+                  </div>
+                </div>
+
+                <div class="bank-name">
+                  Chase Bank
+                </div>
+                <div class="bank-details">
+                  <div class="bank-row">
+                    <div class="bank-account float-left">Credit Card 5577</div>
+                    <div class="bank-fees float-right">$344</div>
+                  </div>
+                  <div class="bank-row">
+                    <div class="bank-account float-left">Checking 2154</div>
+                    <div class="bank-fees float-right">$500</div>
+                  </div>
+                </div>
+                <div class="negotiate-button"><button type="button" class="btn btn-outline-success" style="font-size:1.5em;">Auto-Negotiate</button></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-12 col-xs-12">
+            <div class="card shadow">
+              <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                <h6 class="m-0 font-weight-bold text-primary">Minimize Debt</h6>
+              </div>
+              <span id="info">
+                We're here to assist with a plan that is both actionable and suitable to your situation.<br>
+                To get started, simply complete these two steps:
+                <ol>
+                  <li>Add all of your existing credit cards</li>
+                  <li>Complete the <a href="#" style="color: blue;">Debt Mitigation Form</a></li>
+                </ol>
+               </span>
+
+              <div class="credit-card-container">
+                <div class="credit-card-body">
+                  <div class="credit-card-bank">Bank of America</div>
+                  <div class="credit-card-number">XXXX XXXX XXXX 1388</div>
+                  <div class="credit-card-balance">Balance: $14.28 <img src="img/visa-logo.png" class="col-4 img-fluid float-right"></div>
+                </div>
+              </div>
+
+              <div class="add-card" >
+                <a href="#" class="add-card-content" data-toggle="modal" data-target="#exampleModal" style="display:block;">+ <br> Add More Cards?</a>
+              </div>
+
+            </div>
+
+          </div> <!--End of card -->
+
+        </div>
+
+          <!--End of Bank Details Row -->
+
+        <h1 class="text-center">Looking to reduce your debt?</h1>
+          <!--Expenses Details Row -->
+          <div class="row row-padding">
+            <div class="col-xl-8 col-md-12 col-sm-12">
+              <div class="card shadow">
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                  <h6 class="m-0 font-weight-bold text-primary">Your Spending Habits</h6>
+                </div>
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-xl-4 col-md-12 col-sm-12">
+                      <div class="card shadow">
+                        <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between essentials">
+                          <h6>Essentials</h6>
+                        </div>
+                        <div class="card-body">
+                          <div class="bank-row">
+                            <div class="bank-account float-left">Grocery Shopping  <a id="expense-more-details" class="more-details"><i class="fa fa-chevron-circle-right"></i></a></div>
+                            <div class="bank-fees float-right">$50</div>
+                                <div class="moveasidebankfees bank-row bank-fees-details hidden ">
+                                  <div class="bank-account float-left hidden-expense">Walmart</div>
+                                  <div class="bank-fees float-right">$5</div>
+                                </div>
+                                <div class="moveasidebankfees bank-row bank-fees-details hidden">
+                                  <div class="bank-account float-left hidden-expense ">Target</div>
+                                  <div class="bank-fees float-right">$18</div>
+                                </div>
+                          </div>
+
+                          <div class="bank-row" >
+                            <div class="bank-account float-left">Fuel</div>
+                            <div class="bank-fees float-right">$500</div>
+                          </div>
+                          <div class="bank-row">
+                            <div class="bank-account float-left">Rent</div>
+                            <div class="bank-fees float-right">$375</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                      <div class="card shadow">
+                        <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between non-essentials">
+                          <h6>Non Essentials</h6>
+                        </div>
+                        <div class="card-body">
+                          <div class="bank-row" >
+                            <div class="bank-account float-left">Electronincs</div>
+                            <div class="bank-fees float-right">$349</div>
+                          </div>
+                          <div class="bank-row expandable" >
+                            <div class="bank-account float-left">Merchandise  <a id="expense-more-details" class="more-details"><i class="fa fa-chevron-circle-right"></i></a></div>
+                            <div class="bank-fees float-right">$976</div>
+                            <div class="moveasidebankfees bank-row bank-fees-details hidden ">
+                              <div class="bank-account float-left hidden-expense">Puma</div>
+                              <div class="bank-fees float-right">$5</div>
+                            </div>
+                            <div class="moveasidebankfees bank-row bank-fees-details hidden">
+                              <div class="bank-account float-left hidden-expense ">Addidas</div>
+                              <div class="bank-fees float-right">$18</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                      <div class="card shadow">
+                        <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between on-the-fence">
+                          <h6>On the Fence</h6>
+                        </div>
+                        <div class="card-body">
+
+                          Sorry! No Expenses Found
+
+                        </div>
+                      </div>
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-xl-4 col-xs-12">
+              <div class="card shadow">
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                  <h6 class="m-0 font-weight-bold text-primary">Analyzing your Expenses</h6>
+                </div>
+                <div class="card-body">
+                  <div class="chart-pie pt-4">
+                    <canvas id="myPieChart"></canvas>
+                  </div>
+                  <div class="info-from-chart">
+                    Great job! In the past month, you spent <b><span style="color:black;">96.08%</span></b> less on non-essentials pleasures compared to an average
+                    Harvest user.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!--End of Expenses Details row -->
+
+          <div class="col-md-12">
+          <div class="lastmessage">You’re all caught up for today! Review regularly for updated insights on fees and your debt profile.</div>
+          </div>
+        </div>
+        <section id="footer">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="text-center col">
+                <span class="footer-content-small">Copyright © 2019 Kavi Sanghavi. All Rights Reserved.</span>
+              </div>
+            </div>
+        </section>
+      </div>
+      <!--Main Content Ends-->
+    </div>
+    <!--Content Wrapper Ends -->
+  </div>
+  <!--Page Wrapper Ends -->
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+
+        <div class="modal-body">
+          <h5 style="text-align: center;">Choose Institution</h5>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4 col-sm-12 col-xl-4"><img src="img/bofa.png" class="img-responsive bank-logo"></div>
+              <div class="col-md-4 col-sm-12 col-xl-4"><img src="img/bofa.png" class="img-responsive bank-logo"></div>
+              <div class="col-md-4 col-sm-12 col-xl-4"><img src="img/bofa.png" class="img-responsive bank-logo"></div>
+              <div class="col-md-4 col-sm-12 col-xl-4"><img src="img/bofa.png" class="img-responsive bank-logo"></div>
+              <div class="col-md-4 col-sm-12 col-xl-4"><img src="img/bofa.png" class="img-responsive bank-logo"></div>
+              <div class="col-md-4 col-sm-12 col-xl-4"><img src="img/bofa.png" class="img-responsive bank-logo"></div>
+              <div class="col-md-4 col-sm-12 col-xl-4"><img src="img/bofa.png" class="img-responsive bank-logo"></div>
+              <div class="col-md-4 col-sm-12 col-xl-4"><img src="img/bofa.png" class="img-responsive bank-logo"></div>
+              <div class="col-md-4 col-sm-12 col-xl-4"><img src="img/bofa.png" class="img-responsive bank-logo"></div>
+
+
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Bootstrap core JavaScript-->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin-2.js"></script>
+
+  <!-- Page level plugins -->
+  <script src="vendor/chart.js/Chart.min.js"></script>
+
+  <!-- Page level custom scripts -->
+
+  <script src="js/demo/pie.js"></script>
+  <script src="js/countUp.js"></script>
+  <script src="./js/index.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,366 @@
+body{
+    font-family: 'Roboto Slab', serif;
+}
+
+.dashboard{
+    background: #35c576;
+    padding: 4px 15px;
+    min-width: 100px;
+    border-radius: 8px;
+    letter-spacing: 1px;
+    border: none;
+    margin:0;
+    margin-left: 15px;
+}
+
+.dashboard:hover{
+    background: #2a9d5e;
+}
+
+.login{
+    background: #079bd7;
+    padding: 4px 15px;
+    min-width: 100px;
+    border-radius: 8px;
+    letter-spacing: 1px;
+    border: none;
+    margin:0;
+    margin-left: 15px;
+}
+
+.login:hover{
+    background: #0577a6;
+}
+.scrollNav {
+    transition: all .5s ease;
+    background-color: #fff;
+    border-bottom: 1px solid silver;
+    padding: 8px 20px;
+}
+
+.app-logo{
+    padding: 10px;
+    height: 50px;
+}
+
+.custom-row-margin{
+    margin-left:10px;
+    margin-right:0px;
+}
+
+.custom-center-align{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.counter-title{
+    font-size:1.3em;
+}
+
+.counter-content{
+    font-size:3.5em;
+}
+.bank-details{
+    display: inline-block;
+    width:100%;
+
+}
+.bank-name{
+    font-size:1.5em;
+    border-bottom: 1px solid gray;
+    margin-bottom:5px;
+    color:black;
+}
+.bank-account{
+    display: block;
+    margin:5px;
+
+}
+.bank-fees{
+    display: block;
+    color:#35c576;
+    margin:5px;
+    width:20%;
+    text-align: right;
+}
+.bank-row{
+    clear:both;
+    margin: 0px;
+    font-family: 'Roboto Slab', serif;
+    height:22px;
+}
+
+.credit-card-container{
+    padding: 15px;
+    max-width: 500px;
+    float: left;
+    clear: left;
+    font-family: 'Roboto Slab', serif;
+    width: 82%;
+    margin: 0 auto;
+}
+
+.credit-card-body{
+    background-color: #78261f;
+    color:white;
+    padding: 30px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.credit-card-bank{
+    padding: 10px;
+    font-size: 1.5em;
+}
+
+.credit-card-number{
+    padding: 10px;
+}
+
+.credit-card-balance{
+    padding: 10px;
+}
+#info{
+    margin: 10px;
+    margin-bottom: 0;
+    padding: 10px;
+}
+.add-card{
+    box-sizing: border-box;
+    float:left;
+    padding: 20px;
+    border:1px black dashed;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.add-card:hover{
+    background: lightgrey;
+}
+.add-card-content{
+    font-size: 1em;
+    text-decoration: none;
+}
+
+.add-card-content:hover{
+    text-decoration:none;
+    color:black;
+}
+
+.credit-card-background{
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+}
+
+.row-padding{
+    padding: 20px;
+}
+
+
+.expense{
+    height: 100%;
+    color:white;
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15) !important;
+    border-radius: 5px;
+    font-family: 'Roboto Slab', serif;
+}
+.essential-expense{
+    background-color: #079BD7;
+    border-top: 3px solid #079BD7;
+}
+
+.non-essential-expense{
+    background-color: #FECC47;
+    border-top: 3px solid #FECC47;
+    color:black;
+}
+
+.onthefense{
+    background-color: #7F7F7F;
+    border-top: 3px solid #7F7F7F;
+
+}
+
+
+.expense-title{
+    margin-bottom: 20px;
+    width: 100%;
+    background-color: white;
+    height: 50px;
+    /* text-align: center; */
+    color: black;
+    padding: 10px;
+    font-size: 1.3em;
+}
+
+.expense-body{
+
+}
+
+.expense-content{
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    color:black;
+    height: 40px;
+    margin:10px;
+    display: block;
+    position: relative;
+}
+
+.hidden{
+    display:none;
+}
+
+.moveaside{
+    margin-left: 15px;
+    top:-9px;
+    border-bottom: 1px solid gray;
+}
+
+.moveasidebankfees{
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+
+.spending-title{
+    width: 100%;
+    height: 60px;
+    margin-left: 15px;
+    /* margin-bottom: 8px; */
+    text-align: center;
+    background: slategray;
+    padding-top: 12px;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+    font-family: 'Roboto Slab', serif;
+}
+
+.info-from-chart{
+    padding: 15px;
+}
+
+.spending-habits-container{
+    height:85%;
+    padding-top: 15px;
+}
+
+.lastmessage{
+    width: 100%;
+    margin: 0 auto;
+    font-size: 2em;
+    text-align: center;
+    padding: 26px;
+    color:#4d4d4d;
+}
+
+#footer{
+    color: #fff;
+    bottom: 0;
+    padding: 16px 0;
+    background: #079bd7;
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.footer-content-small{
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.expense-row{
+    padding: 5px;
+}
+
+.border-bottom{
+    border-bottom: 1px solid gray;
+}
+
+.hidden-expense{
+    white-space: nowrap;
+    width: 70%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.more-details{
+    color: #000 !important;
+    font-weight: 700;
+    cursor: pointer;
+}
+.more-details:hover{
+    color:gray;
+}
+
+.expense-name{
+    font-style:italic;
+}
+
+.essentials{
+    background: #079bd7;
+    color:white;
+}
+.non-essentials{
+    background: #bc5656 ;
+    color:white;
+}
+
+.on-the-fence{
+    background: #35c576 ;
+    color:white;
+}
+
+.negotiate-button{
+    position: absolute;
+    bottom:20px;
+    left:40%;
+    text-align:center;
+    margin-top:50px;
+    margin-bottom:20px;
+}
+
+.bank-logo{
+    transition:all 0.4s;
+    padding: 10px;
+    width:100%;
+}
+.bank-logo:hover{
+    transform:scale(1.1);
+}
+
+.c-content {
+    padding: 20px;
+}
+
+.c-go-top {
+    background: none repeat scroll 0 0 padding-box #1099dd;
+    bottom: 20px;
+    border: 1px solid #1099dd;
+    border-radius: 4px;
+    color: #eee;
+    display: none;
+    font-size: 12px;
+    opacity: 0.8;
+    padding: 10px;
+    position: fixed;
+    right: 5%;
+    text-decoration: none;
+    z-index: 999;
+}
+
+.c-go-top:hover,
+.c-go-top:focus,
+.c-go-top:active,
+.c-go-top:visited {
+    color: #fff;
+    outline: 0;
+    text-decoration: none;
+}
